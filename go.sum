@@ -6,11 +6,11 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcUk=
 github.com/stretchr/testify v1.8.4/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
-go.nhat.io/cpy3 v0.0.0-20240211052030-bde1bc76d495 h1:F/Mbz9zhl3hyPaxNcuzuvM4Wq1hNRvpgE9TcIVqpTIA=
-go.nhat.io/cpy3 v0.0.0-20240211052030-bde1bc76d495/go.mod h1:Rz9ZP/FtMt5KgArTtj6sbeN97Jhtc1+pZfKd/pyMKPI=
+go.nhat.io/cpy/v3 v3.11.0 h1:27yQJX9tqaVpbWP7bLGZLb1zk274yJY4gMpfKWenorA=
+go.nhat.io/cpy/v3 v3.11.0/go.mod h1:ZB/O/aVbrq5cbn+3AE04Ae5HeplqFZ3jFgo80MwbR24=
 go.nhat.io/once v0.2.0 h1:tIvETkXlxRlguXN7ttubxzfkC7tUngURKl9YSigT4ic=
 go.nhat.io/once v0.2.0/go.mod h1:CXQFW8fgGQ9/IMDPkJlcTlQ+00dK3Ul4ggkptzn7fvw=
-go.nhat.io/python3 v0.0.0-20240214125738-12c51604fa60 h1:HFyRonCp70xYcPEaI2FC3//rq4IvW6tekHC4jBIbkHg=
-go.nhat.io/python3 v0.0.0-20240214125738-12c51604fa60/go.mod h1:Bp4WfWZNwzaL+gEGsYzpqK9UtAdZXLga9eUp2nrCN7Q=
+go.nhat.io/python/v3 v3.11.0 h1:WonSzNqyYeI2bsbP0YSBBfOip7k7CfJPUfdokt3j0xI=
+go.nhat.io/python/v3 v3.11.0/go.mod h1:Lf9AOVUXgXK1wPbeb1QYL/3SDLf5z+Qua/QzXM5wuLw=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
 gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=

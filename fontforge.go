@@ -5,7 +5,7 @@ import (
 	"os"
 	"sync"
 
-	"go.nhat.io/python3"
+	python3 "go.nhat.io/python/v3"
 )
 
 // ErrFileNotFound indicates that a file was not found.
