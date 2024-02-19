@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/Masterminds/semver/v3"
-	"go.nhat.io/python3"
+	python3 "go.nhat.io/python/v3"
 )
 
 // Font is a wrapper around a Python object.

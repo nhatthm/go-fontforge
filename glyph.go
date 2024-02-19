@@ -1,6 +1,6 @@
 package fontforge
 
-import "go.nhat.io/python3"
+import python3 "go.nhat.io/python/v3"
 
 // Glyph is a font glyph.
 type Glyph struct {
