@@ -6,7 +6,7 @@ PYTHON_VERSION ?= 3.11
 GOLANGCI_LINT_VERSION ?= v1.55.2
 
 GO ?= go
-GOLANGCI_LINT ?= $(shell go env GOPATH)/bin/golangci-lint-$(GOLANGCI_LINT_VERSION)
+GOLANGCI_LINT ?= $(shell go env GOPATH || true)/bin/golangci-lint-$(GOLANGCI_LINT_VERSION)
 
 .PHONY: $(VENDOR_DIR)
 $(VENDOR_DIR):
