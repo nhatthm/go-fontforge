@@ -45,14 +45,18 @@ jobs:
       - name: Checkout code
         uses: nhatthm/gh-actions/checkout@master
 
-      - name: Setup Environment
-        run: |
-          make "$GITHUB_ENV"
-
       - name: Install Go
         uses: nhatthm/gh-actions/setup-go@master
         with:
           go-version: ${{ matrix.go-version }}
+
+      - name: Setup Environment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+          make "$GITHUB_ENV"
 
       - name: Install Dependencies
         shell: bash
@@ -72,6 +76,7 @@ jobs:
         if: matrix.go-version == env.GO_LATEST_VERSION
         uses: nhatthm/gh-actions/codecov@master
         with:
+          token: ${{ secrets.CODECOV_TOKEN }}
           files: ./unit.coverprofile
           flags: unittests-${{ runner.os }}
 
@@ -79,5 +84,6 @@ jobs:
       #  if: matrix.go-version == env.GO_LATEST_VERSION
       #  uses: nhatthm/gh-actions/codecov@master
       #  with:
+      #    token: ${{ secrets.CODECOV_TOKEN }}
       #    file: ./features.coverprofile
       #    flags: featurestests-${{ runner.os }}
