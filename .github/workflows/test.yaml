@@ -51,8 +51,6 @@ jobs:
           go-version: ${{ matrix.go-version }}
 
       - name: Setup Environment
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
