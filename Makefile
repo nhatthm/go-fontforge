@@ -3,7 +3,7 @@ MODULE_NAME=fontforge
 VENDOR_DIR = vendor
 
 PYTHON_VERSION ?= 3.11
-GOLANGCI_LINT_VERSION ?= v1.55.2
+GOLANGCI_LINT_VERSION ?= v1.60.1
 
 GO ?= go
 GOLANGCI_LINT ?= $(shell go env GOPATH || true)/bin/golangci-lint-$(GOLANGCI_LINT_VERSION)
