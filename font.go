@@ -2,9 +2,8 @@ package fontforge
 
 import (
 	"regexp"
-	"strings"
 
-	"github.com/Masterminds/semver/v3"
+	semver "github.com/Masterminds/semver/v3"
 	python3 "go.nhat.io/python/v3"
 )
 
@@ -257,14 +256,3 @@ func (n *SFNTName) UnmarshalPyObject(o *python3.Object) error { //nolint: unpara
 
 // buildPattern is a regex pattern to detect build id in semver, such as `1.2 build 110`.
 var buildPattern = regexp.MustCompile(`\s+build\s+(\d+)$`)
-
-func parseVersion(v string) *semver.Version {
-	// Sanitize the version.
-	v, _, _ = strings.Cut(v, ";")
-	v = strings.TrimSpace(v)
-	v = buildPattern.ReplaceAllString(v, "+$1")
-
-	r, _ := semver.NewVersion(v) //nolint: errcheck
-
-	return r
-}
