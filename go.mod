@@ -7,7 +7,7 @@ toolchain go1.22.0
 require (
 	github.com/Masterminds/semver/v3 v3.4.0
 	github.com/stretchr/testify v1.10.0
-	go.nhat.io/python/v3 v3.11.2
+	go.nhat.io/python/v3 v3.11.3
 )
 
 require (
