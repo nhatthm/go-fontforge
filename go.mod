@@ -4,7 +4,7 @@ go 1.24
 
 require (
 	github.com/Masterminds/semver/v3 v3.4.0
-	github.com/stretchr/testify v1.11.0
+	github.com/stretchr/testify v1.11.1
 	go.nhat.io/python/v3 v3.12.0
 )
 
